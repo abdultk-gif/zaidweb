@@ -1,0 +1,44 @@
+/* src/index.css */
+@import 'Font.css';
+
+:root {
+  /* Colors from Figma */
+  --primary-blue: #032239;
+  --dark-blue: #013769;
+  --light-blue: #014276;
+  --accent-red: #E6516B;
+  --white: #FFFFFF;
+  --light-gray: #F9F9F9;
+  --medium-gray: #D9D9D9;
+  --dark-gray: #464646;
+  --text-gray: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Amazon Ember Display', sans-serif;
+  color: var(--dark-gray);
+  background-color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

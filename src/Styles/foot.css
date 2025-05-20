@@ -1,0 +1,258 @@
+/* Footer.css */
+.footer {
+  background-color: #032239;
+  color: white;
+  font-family: 'Amazon Ember Display', sans-serif;
+  padding: 80px 0 30px;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  text-align: center;
+  margin-bottom: 40px;  /* Reduced to account for divider */
+}
+
+.subscribe-title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.email-input-container {
+  display: flex;
+  justify-content: center;
+  max-width: 631px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.email-input {
+  width: 100%;
+  padding: 12px 25px;
+  border-radius: 100px;
+  border: none;
+  font-size: 16px;
+}
+
+.subscribe-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #032239;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Footer Divider */
+.footer-divider {
+  height: 1px;
+  background-color: #1D394D;
+  margin: 30px 0;
+}
+
+/* Main Content - Logo and Links */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0;  /* Added padding top and bottom for spacing */
+}
+
+/* Logo Section */
+.logo-content {
+  flex: 0 1 30%;
+}
+
+.logo-container {
+  margin-bottom: 25px;
+}
+
+.logo-img {
+  height: auto;
+  max-width: 180px;
+  margin-bottom: 8px;
+}
+
+.logo-subtext {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.brand-message {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 300px;
+  margin-top: 15px;
+}
+
+/* Links Section */
+.links-content {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.links-grid {
+  display: flex;
+  gap: 100px;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* Increased gap between links to match reference */
+}
+
+.links-column h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Help Column */
+.help-column {
+  flex: 0 1 30%;
+  text-align: right;
+}
+
+.help-column h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 35px; /* Increased spacing below heading */
+}
+
+.phone {
+  font-size: 36px;
+  color: #E6516B;
+  margin: 0 0 25px; /* Increased spacing between phone and email */
+  line-height: 1;
+}
+
+.email {
+  font-size: 36px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Links styling */
+.links-column a {
+  text-decoration: none;
+  color: white;
+}
+
+.links-column a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 30px 0;  /* Added padding top and bottom */
+}
+
+.copyright, .credits {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .links-grid {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+  
+  .logo-content {
+    text-align: center;
+  }
+  
+  .brand-message {
+    margin: 15px auto 0;
+  }
+  
+  .links-content {
+    width: 100%;
+  }
+  
+  .links-grid {
+    justify-content: center;
+  }
+  
+  .help-column {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+  
+  .subscribe-title {
+    font-size: 28px;
+  }
+  
+  .email-input-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .subscribe-btn {
+    position: static;
+    transform: none;
+    padding: 12px;
+    background-color: #E6516B;
+    color: white;
+    border-radius: 100px;
+    width: 100%;
+  }
+  
+  .links-grid {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .links-column {
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .phone, .email {
+    font-size: 24px;
+  }
+}

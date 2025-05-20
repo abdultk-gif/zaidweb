@@ -1,0 +1,113 @@
+.dealOfTheDay {
+  height: 520px;
+  background: url('../assets/Dealofd.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Aligns child content to right */
+}
+
+.content {
+  max-width: 400px;
+  color: var(--dark-gray);
+}
+
+.tag {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-gray);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 62px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-gray);
+  margin-bottom: 40px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.timeUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeValue {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.timeLabel {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.colon {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.shopBtn {
+  padding: 12px 18px;
+  border: 2px solid var(--dark-gray);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--dark-gray);
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.shopBtn:hover {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .dealOfTheDay {
+    height: auto;
+    padding: 60px 0;
+  }
+  
+  .container {
+    justify-content: center; /* Center content on mobile instead */
+  }
+  
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  
+  .timer {
+    justify-content: center;
+  }
+}

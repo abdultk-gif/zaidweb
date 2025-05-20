@@ -1,0 +1,122 @@
+.contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .contactSection {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mainHeading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .subHeading {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  .contactInfo {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .contactInfo p {
+    margin: 0.5rem 0;
+  }
+  
+  .locationSection, .contactFormSection {
+    margin-bottom: 3rem;
+  }
+  
+  .sectionHeading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .locationText {
+    margin-bottom: 1rem;
+  }
+  
+  .locationList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .locationList li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .locationList li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+  }
+  
+  .formDescription {
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formRow {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+  }
+  
+  .submitButton {
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #2980b9;
+  }

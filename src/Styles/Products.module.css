@@ -1,0 +1,141 @@
+.products {
+  padding: 40px 20px;
+  background: white;
+  width: 100%;
+}
+
+.productGrid {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 15px;
+  width: 100%;
+}
+
+.leftColumn {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex; /* Add flex display */
+}
+
+.rightColumn {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.leftColumn .productCard {
+  width: 100%; /* Make card take full width */
+  height: 415px; /* Match exact height of right column including gap */
+}
+
+.topRow {
+  display: flex;
+  gap: 15px;
+  height: 200px; /* Fixed height */
+}
+
+.topRow .productCard {
+  flex: 1;
+  height: 100%;
+}
+
+.bottomRow {
+  height: 200px; /* Fixed height */
+}
+
+.bottomRow .productCard {
+  height: 100%;
+}
+
+.productCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay h3 {
+  color: white;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.shopButton {
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.shopButton:hover {
+  background: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    flex-direction: column;
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .leftColumn .productCard {
+    height: 300px;
+  }
+  
+  .topRow .productCard,
+  .bottomRow .productCard {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topRow {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+  
+  .topRow .productCard {
+    height: 150px;
+  }
+}

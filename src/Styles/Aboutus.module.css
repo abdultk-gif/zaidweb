@@ -1,0 +1,215 @@
+/* AboutUs.module.css */
+
+.aboutUsContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section Styles */
+  .heroSection {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  
+  .heroImageContainer {
+    flex: 1;
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .heroText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .tagline {
+    color: #6b7280;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mainHeading {
+    color: #0c4a6e;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .heroParagraph {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b5563;
+  }
+  
+  .shopButton {
+    background-color: #0c4a6e;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+  }
+  
+  .shopButton:hover {
+    background-color: #075985;
+  }
+  
+  /* Features Section Styles */
+  .featuresSection {
+    padding: 2rem 1rem;
+    background-color: #f9fafb;
+    margin-bottom: 2rem;
+  }
+  
+  .featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .featureIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #0c4a6e;
+  }
+  
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .featureItem h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #0c4a6e;
+  }
+  
+  .featureItem p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  /* Main Content Section Styles */
+  .mainContentSection {
+    padding: 2rem 1rem;
+  }
+  
+  .sectionHeading {
+    text-align: center;
+    color: #0c4a6e;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .sectionContent {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b5563;
+  }
+  
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .gridImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+  }
+  
+  .gridItem p {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #0c4a6e;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (min-width: 768px) {
+    .heroContent {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .mainHeading {
+      font-size: 2.5rem;
+    }
+  
+    .imageGrid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .heroSection {
+      padding: 4rem 2rem;
+    }
+  
+    .featuresSection, 
+    .mainContentSection {
+      padding: 3rem 2rem;
+    }
+  
+    .mainHeading {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .imageGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
